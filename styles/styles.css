@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Sofadi+One&family=Young+Serif&display=swap');
+
+:root {
+    --text-color: hsl(30, 10%, 34%);
+    --background-color: hsl(30, 54%, 90%);
+    --subtitle-color: hsl(14, 45%, 36%);
+    --title-color: hsl(24, 5%, 18%);
+    --section-time-color: hsl(330, 100%, 98%);
+    --section-title-color: hsl(332, 51%, 32%);
+    --line-color: hsl(30, 18%, 87%);
+    --main-color: hsl(0, 0%, 100%);
+    --text: font-family: "Fira Sans", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--text);
+}
+
+main {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+    color: var(--text-color);
+}
+
+img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.introduccion h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+.time {
+    background-color: var(--section-time-color);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.time h3 {
+    color: var(--section-title-color);
+}
+
+.time ul {
+    padding-left: 20px;
+}
+
+.time li {
+    margin-top: 10px;
+}
+
+.time li span {
+    font-weight: 700;
+}
+
+article h2 {
+    color: var(--subtitle-color);
+} 
+
+.ingredients  {
+    margin-top: 20px;
+}
+
+.ingredients ul {
+    padding-left: 20px;
+}
+
+.ingredients li {
+    margin-top: 10px;
+}
+
+ hr {
+    background-color: var(--line-color);
+    height: 1px;
+    margin: 20px 0;
+    width: 100%;
+ }
+
+.instructions ol {
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin-top: 10px;
+}
+
+.instructions li span {
+    font-weight: 700;
+}
+
+.nutrition p {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.nutrition table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutrition table td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid var(--line-color);
+}
+
+.columna2 {
+    color: var(--subtitle-color);
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0;
+    }
+
+    img {
+        margin-bottom: 0;
+    }
+
+    .recipe {
+        padding: 30px;
+    }
+}
